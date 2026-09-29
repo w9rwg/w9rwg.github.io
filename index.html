@@ -166,6 +166,10 @@
       margin-top: 8px;
     }
 
+    .qrz-button:hover {
+      background: #0b1d2d;
+    }
+
     /* CARDS */
 
     .cards {
@@ -229,6 +233,43 @@
       margin-top: 0;
     }
 
+    /* BLOG PROMO */
+
+    .blog-promo {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .blog-promo h2 {
+      color: #173552;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .blog-promo p {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 22px;
+    }
+
+    .blog-button {
+      display: inline-block;
+      background: #173552;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .blog-button:hover {
+      background: #0b1d2d;
+    }
+
     /* FOOTER */
 
     footer {
@@ -281,13 +322,20 @@
       .feature img {
         min-height: 300px;
       }
+
+      .blog-promo {
+        padding: 30px 22px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
+
   <header class="hero">
+
     <div class="hero-content">
 
       <h1 class="callsign">W9RWG</h1>
@@ -309,18 +357,25 @@
         About W9RWG
       </a>
 
+      <a class="hero-button" href="blog.html">
+        Read the Blog
+      </a>
+
     </div>
+
   </header>
 
 
- 
+  <!-- NAVIGATION -->
+
   <nav>
-  <a href="#about">About</a>
-  <a href="#portable">Portable Radio</a>
-  <a href="#projects">Projects</a>
-  <a href="#service">Public Service</a>
-  <a href="blog.html">Blog</a>
-</nav>
+    <a href="#about">About</a>
+    <a href="#portable">Portable Radio</a>
+    <a href="#projects">Projects</a>
+    <a href="#service">Public Service</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
 
   <main>
 
@@ -363,7 +418,7 @@
     </section>
 
 
-    <!-- PORTABLE -->
+    <!-- PORTABLE RADIO -->
 
     <section id="portable">
 
@@ -402,7 +457,7 @@
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- AMATEUR RADIO -->
 
     <section id="projects">
 
@@ -440,7 +495,7 @@
 
           <div class="card-content">
 
-            <h3>Projects & Experimenting</h3>
+            <h3>Projects &amp; Experimenting</h3>
 
             <p>
               Antennas, APRS, digital modes, portable stations and other
@@ -505,8 +560,32 @@
 
     </section>
 
+
+    <!-- BLOG -->
+
+    <section id="blog">
+
+      <div class="blog-promo">
+
+        <h2>W9RWG Blog</h2>
+
+        <p>
+          Stories, thoughts and experiences from portable operating,
+          amateur radio projects, travels and adventures on the air.
+        </p>
+
+        <a class="blog-button" href="blog.html">
+          Read the Blog
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
 
+
+  <!-- FOOTER -->
 
   <footer>
 
@@ -517,10 +596,14 @@
     </p>
 
     <p>
+      <a href="blog.html">Blog</a>
+      &nbsp; • &nbsp;
+
       <a href="https://www.qrz.com/db/W9RWG"
          target="_blank">
         QRZ
       </a>
+
       &nbsp; • &nbsp;
       W9RWG.com
     </p>
