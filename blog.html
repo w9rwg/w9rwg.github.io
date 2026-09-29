@@ -1,1 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>W9RWG Blog | Amateur Radio</title>
+  <meta name="description" content="The W9RWG amateur radio blog - portable operating, radio projects, public service and adventures in amateur radio.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f7;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+
+    .blog-header {
+      background:
+        linear-gradient(rgba(8, 25, 43, 0.45), rgba(8, 25, 43, 0.85)),
+        url("chikaming-sign.png") center center / cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .blog-header h1 {
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      margin: 0;
+      letter-spacing: 3px;
+      text-shadow: 0 4px 14px rgba(0,0,0,.7);
+    }
+
+    .blog-header p {
+      font-size: 1.25rem;
+      margin: 10px 0 0;
+      text-shadow: 0 2px 8px rgba(0,0,0,.8);
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      background: #0b1d2d;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+      padding: 15px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .blog-intro {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .blog-intro h2 {
+      color: #173552;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .blog-intro p {
+      color: #555;
+      margin-top: 0;
+    }
+
+    /* ARTICLE */
+
+    article {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      margin-bottom: 50px;
+    }
+
+    .article-hero {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .article-content {
+      padding: 40px 50px 50px;
+    }
+
+    .article-content h1 {
+      color: #173552;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin: 0 0 10px;
+    }
+
+    .article-date {
+      color: #666;
+      font-size: .95rem;
+      margin-bottom: 30px;
+    }
+
+    .article-content p {
+      margin: 0 0 22px;
+      font-size: 1.08rem;
+    }
+
+    .article-content h2 {
+      color: #173552;
+      margin-top: 40px;
+    }
+
+    .article-image {
+      width: 100%;
+      border-radius: 8px;
+      margin: 18px 0 28px;
+      display: block;
+    }
+
+    .caption {
+      color: #666;
+      font-size: .9rem !important;
+      font-style: italic;
+      margin-top: -18px !important;
+      margin-bottom: 32px !important;
+    }
+
+    .big-quote {
+      background: #eef2f5;
+      border-left: 6px solid #173552;
+      padding: 22px 25px;
+      margin: 30px 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #173552;
+    }
+
+    .closing {
+      font-size: 1.3rem !important;
+      font-weight: bold;
+      color: #173552;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #091927;
+      color: #ccc;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+      .blog-header {
+        padding: 65px 20px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: .9rem;
+      }
+
+      main {
+        padding: 30px 12px;
+      }
+
+      .article-content {
+        padding: 28px 22px 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="blog-header">
+    <h1>W9RWG Blog</h1>
+    <p>Amateur Radio • Portable Operations • Projects & Adventures</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#portable">Portable Radio</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#service">Public Service</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <main>
+
+    <div class="blog-intro">
+      <h2>From the Radio & the Road</h2>
+      <p>
+        Thoughts, experiences and stories from my adventures in amateur radio.
+      </p>
+    </div>
+
+    <article>
+
+      <img class="article-hero"
+           src="chikaming-sign.png"
+           alt="Chikaming Township Park and Preserve">
+
+      <div class="article-content">
+
+        <h1>POTA Sends Activators to Toxic Waste Dumps?</h1>
+
+        <div class="article-date">
+          September 2026 • W9RWG
+        </div>
+
+        <p>
+          I've been following the Reckless Ben <em>Bricks &amp; Minifigs</em>
+          saga, and one of the lines that stuck with me was the intentionally
+          provocative phrase, “Bricks &amp; Minifigs steals from old people.”
+        </p>
+
+        <p>
+          Then I saw a post in a POTA Facebook group from an activator at
+          US-4243 in Wisconsin. The operator described a former military base,
+          difficulty navigating the property, nearby Ho-Chunk Nation land that
+          was off limits, and passing an asbestos waste disposal area on the
+          way out.
+        </p>
+
+        <img class="article-image"
+             src="pota-toxic-waste.png"
+             alt="Facebook post showing a POTA activation at US-4243">
+
+        <p class="caption">
+          The POTA post that got me thinking about how we decide what qualifies
+          as a park entity.
+        </p>
+
+        <p>My immediate thought was:</p>
+
+        <div class="big-quote">
+          “POTA sends activators to toxic waste dumps.”
+        </div>
+
+        <p>
+          Obviously, POTA didn't actually send anyone there. The operator chose
+          the location, and the property qualifies under POTA's rules. But that
+          absurd-sounding sentence highlights something I've increasingly
+          questioned:
+          <strong>
+            Are we defining good amateur-radio park entities by the right
+            criteria?
+          </strong>
+        </p>
+
+        <h2>Meanwhile, I Was Doing “Deprogrammed POTA”</h2>
+
+        <p>
+          That same day, I was doing what I've jokingly started calling
+          <strong>“deprogrammed POTA”</strong> at Chikaming Township Park
+          &amp; Preserve in Michigan.
+        </p>
+
+        <p>
+          And the contrast couldn't have been much greater.
+        </p>
+
+        <p>
+          Chikaming is the kind of place most people would recognize
+          immediately as a park. It has trails, maintained grounds, picnic
+          facilities, a pavilion and other amenities intended for people to
+          actually visit and enjoy.
+        </p>
+
+        <img class="article-image"
+             src="chikaming-pavilion.png"
+             alt="Accessible picnic pavilion at Chikaming Township Park and Preserve">
+
+        <p>
+          One small detail particularly impressed me:
+          <strong>accessible picnic tables.</strong>
+        </p>
+
+        <p>
+          We have someone in our amateur-radio community whose child uses a
+          wheelchair, so accessibility is something I've become more conscious
+          of when looking at potential operating locations. These tables were
+          designed so someone using a wheelchair could actually sit at the
+          table with everyone else.
+        </p>
+
+        <p>
+          Despite all the state and national properties I've visited while
+          operating portable, I don't recall encountering that particular
+          feature before.
+        </p>
+
+        <p>
+          Yet this township park isn't a POTA entity.
+        </p>
+
+        <h2>What Makes a Good Park Entity?</h2>
+
+        <p>
+          That's where I think the current philosophy deserves discussion.
+        </p>
+
+        <p>
+          The question shouldn't simply be
+          <strong>“Which level of government owns this land?”</strong>
+        </p>
+
+        <div class="big-quote">
+          “Is this actually a good place for people to go and enjoy amateur radio?”
+        </div>
+
+        <p>
+          I'm not arguing that every municipal park in America needs a POTA
+          number. That would create its own problems. But when an ownership
+          rule can qualify an obscure former military property containing an
+          asbestos disposal area while excluding a maintained, accessible
+          community park, I think it's fair to ask whether ownership has
+          become more important than the quality and purpose of the place
+          itself.
+        </p>
+
+        <p>
+          For me, Chikaming Township Park &amp; Preserve was exactly what
+          portable amateur radio should encourage me to discover.
+        </p>
+
+        <p>
+          It just wasn't POTA.
+        </p>
+
+        <p class="closing">
+          And I had a great activation anyway.
+        </p>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+
+    <strong>W9RWG</strong>
+
+    <p>
+      Amateur Radio • Indiana
+    </p>
+
+    <p>
+      <a href="index.html">Home</a>
+      &nbsp; • &nbsp;
+      <a href="https://www.qrz.com/db/W9RWG"
+         target="_blank">
+        QRZ
+      </a>
+      &nbsp; • &nbsp;
+      W9RWG.com
+    </p>
+
+    <p>
+      © 2026 W9RWG
+    </p>
+
+  </footer>
+
+</body>
+</html>
